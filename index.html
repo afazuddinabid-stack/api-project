@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="min-h-screen max-w-md mx-auto pt-20 ">
+    <div class="logo w-[200px] mx-auto">
+        <img src="./assets/github-logo.png" alt="" srcset="">  
+    </div>
+    <div class="px-16 mt-4">
+        <h1 class="font-bold text-2xl">GitHub Issues Tracker</h1>
+        <p class="text-gray-600 px-4">Sign in to manage your issues</p>
+     </div>
+
+<div class="form pt-5">
+     <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+
+
+  <label class="label text-black font-semibold text-neutrol">Username</label>
+  <input type="email" class="input" placeholder="Enter Username" />
+
+  <label class="label text-black font-semibold">Password</label>
+  <input type="password" class="input" placeholder="Enter Password" />
+
+  <button class="btn btn-primary mt-4">Sign In</button>
+</fieldset>
+</div>
+ 
+
+<script src="./script.js"></script>
 </body>
 </html>
