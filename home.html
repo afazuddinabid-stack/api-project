@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub Issues Tracker||login <img src="./assets/github-logo.png" alt=""></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    home page
+<body class="min-h-screen ">
+<!-- nav header -->
+ <header>
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl"><i class="fa-brands fa-github"></i>GitHub Issues Tracker</a>
+  </div>
+  <div class="flex gap-2">
+    <input type="text" placeholder="Search issues..." class="input input-bordered w-24 md:w-auto" />
+    <button class=" btn btn-primary">+New Issue</button>
+  </div>
+</div>
+ </header>
+ <!-- tab section -->
+<div class="px-30 mt-4 w-full max-w-4xl ">
+  <button class="btn btn-primary">All</button>
+  <button class="btn btn-ghost">Open</button>
+  <button class="btn btn-ghost">Closed</button>
+</div>
+<!-- isssue -->
+<section class=" px-25 mt-10 w-full max-w-8xl flex justify-between border-2 border-gray-200 pb-4">
+   <div class="flex gap-2 px-3">
+    <div class="pt-2"><img src="./assets/Aperture.png" alt=""></div>
+    <div>
+    <h1 class="text-2xl font-medium">50 Issues</h1>
+    <p>Track and manage your project issues</p>
+   </div>  
+    
+    </div>
+    
+      
+   
+   <div class="flex gap-6 pt-3">
+    <p><i class="fa-solid fa-circle" style="color: rgb(10, 170, 121);"></i>open</p>
+    <p><i class="fa-solid fa-circle" style="color: #A855F7;"></i>closed</p>
+   </div>
+</section>
+<!-- card section -->
+ <section>
+    <div id="card-container" class="mx-auto px-25">
+      <!-- <div class="card w-100 px-6 border-t-6 border-green-600 mt-6 shadow-lg ">
+        <div class="flex justify-between px-4">
+          <img src="./assets/Open-Status.png" alt="">
+          <div class="text-[#EF4444] w-15 text-center rounded-3xl bg-slate-300">High</div>
+        </div>
+        <div>
+          <h1 class="text-2xl">Fix navigation menu on mobile devices</h1>
+          <br>
+          <p>The navigation menu doesn't collapse properly on mobile devices...</p>
+          <div class="flex gap-4 mt-3">
+            <div class="bg-[#FECACA] text-[#EF4444] rounded-4xl w-10 text-center">Bug</div>
+            <div class="text-[#D97706] bg-[#FDE68A] rounded-xl px-3">help wanted</div>
+          </div>
+          <br>
+          <div>
+            <p>#1by john_doe</p>
+            <p>1/15/2024</p>
+          </div>
+        </div>
+
+      </div> -->
+    </div>
+ </section>
+
+<script src="./home.js"></script>
 </body>
 </html>
