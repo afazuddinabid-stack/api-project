@@ -1,8 +1,13 @@
 const cardContainer = document.getElementById("card-container");
+const loadingSpinner = document.getElementById("loadin-spinner");
+
 async function loadcards() {
+    loadingSpinner.classList.remove("hidden");
+    loadingSpinner.classList.add("flex");
     const res = await fetch('https://phi-lab-server.vercel.app/api/v1/lab/issues');
     const data = await res.json();
     console.log(data);
+    loadingSpinner.classList.add("hidden");
     displayCard(data.data);
 }
 
